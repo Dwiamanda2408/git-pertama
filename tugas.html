@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en" scroll>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sedan:ital@0;1&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    * {
+        font-family: "Dancing Script", cursive;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 0 20px;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 99;
+        border-bottom: 1px solid #00a9ff;
+
+    }
+
+    .logo {
+        color: rgb(97, 203, 238);
+    }
+
+    nav ul li {
+        display: inline;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: rgb(97, 203, 238);
+    }
+
+    nav ul li a:hover {
+        text-decoration-color: underline;
+        /* efek pada link jika disentuh */
+        border-bottom: 3px solid rgb(97, 203, 238);
+        color: rgb(51, 168, 176);
+
+    }
+
+    .menu ul li {
+        margin-left: 30px;
+
+    }
+
+    .h2 {
+        color: rgb(97, 203, 238);
+        margin-bottom: 10px;
+    }
+
+    #Catalog {
+        padding: 60px 0 40px;
+    }
+
+    .div1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-right: 20px;
+    }
+
+
+
+    .h2 {
+        text-align: center !important;
+    }
+
+
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .artikel1 {
+        width: 20%;
+        margin: 10px;
+        box-shadow: 0 4px 4px #00a9ff;
+        ;
+        border: 1px solid #fff;
+        border-radius: 12px;
+        padding: 10px;
+    }
+
+    .artikel1:hover {
+        box-shadow: 0 0 4px #00a9ff;
+        position: relative;
+        bottom: 4px;
+    }
+
+    .artikel2 {
+        width: 20%;
+        margin: 10px;
+        box-shadow: 0 4px 4px #00a9ff;
+        border: 1px solid #fff;
+        border-radius: 12px;
+        padding: 10px;
+    }
+
+    .artikel2:hover {
+        box-shadow: 0 0 4px #00a9ff;
+        position: relative;
+        bottom: 4px;
+    }
+
+    .artikel3 {
+        width: 20%;
+        margin: 10px;
+        box-shadow: 0 4px 4px #00a9ff;
+        border: 1px solid #fff;
+        border-radius: 12px;
+        position: relative;
+        overflow: hidden;
+        padding: 10px;
+    }
+
+    .artikel3:hover {
+        box-shadow: 0 0 4px #00a9ff;
+        position: relative;
+        bottom: 4px;
+    }
+
+
+    .artikel4 {
+        width: 20%;
+        margin: 10px;
+        box-shadow: 0 4px 4px #00a9ff;
+        border: 1px solid #fff;
+        border-radius: 12px;
+        padding: 10px;
+    }
+
+    .artikel4:hover {
+        box-shadow: 0 0 4px #00a9ff;
+        position: relative;
+        bottom: 4px;
+    }
+
+    .artikel5 {
+        width: 20%;
+        margin: 10px;
+        box-shadow: 0 4px 4px #00a9ff;
+        border: 1px solid #fff;
+        border-radius: 12px;
+        padding: 10px;
+    }
+
+    .artikel5:hover {
+        box-shadow: 0 0 4px #00a9ff;
+        position: relative;
+        bottom: 4px;
+    }
+
+    .gambar1,
+    .gambar2,
+    .gambar3,
+    .gambar4,
+    .gambar5 {
+        border-radius: 7px;
+        width: 100%;
+        height: 40%;
+        margin-right: 100px;
+    }
+
+    section h2 {
+        text-align: center;
+        font-size: 26px;
+        text-decoration: underline;
+        margin-top: 0;
+        color: rgb(49, 181, 225);
+    }
+
+    .ulprice {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        padding: 0;
+    }
+
+    #Price {
+        background-color: #cdf5fd;
+    }
+
+    section {
+        padding: 60px 0 40px;
+        display: block;
+    }
+
+    h2 {
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        unicode-bidi: isolate;
+    }
+
+    .table,
+    th,
+    td {
+        border: 1px solid #00a9ff;
+        padding: 10px;
+    }
+
+    .table,
+    th {
+        background-color: #b5e6ff;
+    }
+
+    .table-product {
+        margin: 0 auto;
+    }
+
+    .tabel {
+        border-collapse: collapse;
+    }
+
+    p,
+    a,
+    li,
+    label,
+    input,
+    textarea,
+    button,
+    table {
+        font-size: 16px;
+    }
+
+
+    .table,
+    img {
+        width: 200px;
+    }
+
+    .tabel {
+        margin: 0 auto;
+
+        width: 80%;
+    }
+
+    #contact {
+        background-color: #b5e6ff;
+        padding: 60px 0 40px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+
+    form #username,
+    #phone,
+    #image {
+        background-color: white;
+        height: 60px;
+        border-radius: 10px;
+        border: none;
+        width: 700px;
+        justify-content: center;
+    }
+
+    .input {
+        margin-bottom: 10px;
+    }
+
+    .input label {
+        display: block;
+        justify-content: center;
+        padding: 12px;
+    }
+
+    .input textarea,
+    .input input {
+        /* width: 100%; */
+        border-radius: 10px;
+        border: none;
+        padding: 8px 20px;
+    }
+
+    .inputan {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    p {
+        text-align: center;
+        padding: 20px;
+        text-align: justify;
+    }
+
+    h3 {
+        color: #00a9ff;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .kirim {
+        background-color: #00a9ff;
+        color: #fff;
+        width: 120px;
+        height: 40px;
+        margin: 10px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .batal {
+        color: #7cd3f3;
+        width: 120px;
+        height: 40px;
+        margin: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        border: none;
+    }
+
+    #about {
+        padding: 200px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer p {
+        font-size: 16px;
+        font-family: "Poppins", sans-serif;
+    }
+
+    button {
+        margin-right: auto;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .artikel1,
+    .artikel2,
+    .artikel3,
+    .artikel4,
+    .artikel5 {
+        width: 90%;
+        margin: 10px auto;
+        height: 200px;
+    }
+
+    .submit {
+        display: flex;
+        justify-content: start;
+        width: 75%;
+    }
+
+    /* web responsive */
+    @media screen and (max-width: 800px) {
+        .main{
+            width: 100%;
+        }
+        .About{
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width:450px) {
+        .container{
+            flex-direction: column;
+        }
+    }
+</style>
+
+<body class="container">
+
+    <header>
+        <h1 class="logo">Logo</h1>
+        <nav class="menu">
+            <ul> <!-- membuat daftar item tanpa berurutan-->
+                <li><a href="#">Home</a></li>
+                <li><a href="#Catalog">Catalog</a></li> <!-- membuat link yaang tujuannya dihalaman yang sama -->
+                <li><a href="#Price">Price</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Product">Product</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section id="Catalog">
+            <h2 class="h2">Catalog</h2>
+            <div class="container">
+                <article class="artikel1">
+                    <img class="gambar1" src="../pert3/baju1.jpg" alt="Pakaian" title="clothes">
+                    <div class="div-body">
+                        <h3>Clothes</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Illum, ex. Impedit quod quidem adipisci, recusandae itaque,
+                            temporibus debitis ad aut eaque illo aliquid soluta! Atque
+                            ducimus laudantium corporis nesciunt sequi.</p>
+                    </div>
+                </article>
+                <article class="artikel2">
+                    <img class="gambar2" src="../pert3/sepatu.jpg" alt="shoes">
+                    <div class="div-body">
+                        <h3 id="Shoes">Shoes</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                            molestiae non quasi ab provident, eius ea ipsam, adipisci consequatur
+                            sunt ipsum inventore veritatis laboriosam eligendi. Nemo, labore. Error,
+                            accusamus perferendis.</p>
+                    </div>
+                </article>
+                <article class="artikel3">
+                    <img class="gambar3" src="../pert3/baru/startb.png" alt="topi">
+                    <div class="div-body">
+                        <h3 id="Hats">Hats</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, alias!
+                            Neque rerum voluptatem beatae reiciendis harum voluptate quos, provident
+                            impedit hic dignissimos ut. Possimus quibusdam deserunt aperiam dolore
+                            exercitationem est?</p>
+                    </div>
+                </article>
+                <article class="artikel4">
+                    <img class="gambar4" src="../pert3/jam.jpg" title="watches" alt="jam">
+                    <div class="div-body">
+                        <h3>Watches</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente odit maxime eius.
+                            Temporibus ad aliquid error quod minus et inventore rerum, obcaecati suscipit quibusdam
+                            hic, excepturi explicabo beatae eligendi rem.</p>
+                    </div>
+                </article>
+                <article class="artikel5">
+                    <img class="gambar5" src="../pert3/tas.jpg" title="Bags" alt="tas">
+                    <div class="div-body">
+                        <h3 id="Bags">Bags</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse omnis veritatis molestiae,
+                            placeat
+                            quos officiis quasi. Incidunt officiis repellendus animi eaque facilis voluptatibus
+                            laudantium,
+                            alias
+                            est reiciendis repudiandae numquam expedita.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="Price">
+            <h2>Price</h2>
+            <ul class="ulprice">
+                <li>Clothes
+                    <ol type="1" reversed>
+                        <li>Cloth A: <b>$200</b></li>
+                        <li>Cloth B: <b>$230</b></li>
+                        <li>Cloth C: <b>$170</b></li>
+                    </ol>
+                </li>
+                <li>Shoes
+                    <ol start="4">
+                        <li>Cloth A: <b>$100</b></li>
+                        <li>Cloth B: <b>$130</b></li>
+                        <li>Cloth C: <b>$170</b></li>
+                    </ol>
+                </li>
+                <li>Hats
+                    <ol start="1">
+                        <li>Cloth A: <b>$100</b></li>
+                        <li>Cloth B: <b>$130</b></li>
+                        <li>Cloth C: <b>$170</b></li>
+                    </ol>
+                </li>
+                <li>Bags
+                    <ol type="i" start="vii"><!-- membuat daftar list berurutan -->
+                        <li>Cloth A: <b>$100</b></li>
+                        <li>Cloth B: <b>$130</b></li>
+                        <li>Cloth C: <b>$170</b></li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+
+
+        <section id="Product">
+            <h2>Product</h2>
+            <table class="tabel">
+                <tbody class="tbody">
+                    <tr><!-- baris -->
+                        <th colspan="2">Catalog</th><!-- th=judul colspan=mengambil 2 colom -->
+                        <td>Clothes</td> <!-- tabel data -->
+                        <td>Shoes</td>
+                        <td>Watches</td>
+                        <td>Bags</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Img</th>
+                        <td><img src="baju1.jpg" alt="clothes" width="120px"></td>
+                        <td><img src="sepatu.jpg" alt="Shoes" width="120px"></td>
+                        <td><img src="jam.jpg" alt="watches" width="120px"></td>
+                        <td><img src="tas.jpg" alt="bags" width="120px"></td>
+                    </tr>
+                    <tr>
+                        <th rowspan="6">Price</th> <!-- rowspan=mengambil 6 baris -->
+                        <th rowspan="2">A</th>
+                        <td>$200</td>
+                        <td>$324</td>
+                        <td>$423</td>
+                        <td>$322</td>
+                    </tr>
+                    <tr>
+                        <td>$532</td>
+                        <td>$203</td>
+                        <td>$452</td>
+                        <td>$547</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">B</th>
+                        <td>$632</td>
+                        <td>$634</td>
+                        <td>$988</td>
+                        <td>$560</td>
+                    </tr>
+
+                    <tr>
+                        <td>$678</td>
+                        <td>$432</td>
+                        <td>$199</td>
+                        <td>$399</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">C</th>
+                        <td>$632</td>
+                        <td>$634</td>
+                        <td>$988</td>
+                        <td>$560</td>
+                    <tr>
+                        <td>$678</td>
+                        <td>$432</td>
+                        <td>$199</td>
+                        <td>$399</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <main class="login-contact">
+            <section id="contact">
+                <h2>Contact</h2>
+                <form class="inputan"> <!-- elemen membuat formulir -->
+                    <div class="input">
+                        <label for="username">username</label><!-- label = memberi/menandai suatu elemen formulir -->
+                        <input id="username" type="text" name="username" placeholder="your username"
+                            required><!--required = atribut untuk inputan yang harus wajib diisi -->
+                    </div>
+                    <div class="input">
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" type="tel" name="phone" placeholder="Your phone number" required>
+                    </div>
+                    <div class="input">
+                        <label for="image">image</label>
+                        <input id="image" type="file" name="image" accept="image/png" required>
+                    </div>
+                    <div class="input">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" cols="98" placeholder="your message" required></textarea>
+                    </div>
+                    <div class="submit">
+                        <button class="kirim" type="submit">Send</button>
+                        <button class="batal" type="reset">Cancel</button>
+                    </div>
+                    <!-- Boostrap -->
+                     <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Username</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Your Username">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div> 
+                </form>
+            </section>
+        </main>
+
+        <section id="About">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quia ipsam consectetur omnis rem porro, obcaecati magnam
+                vitae corrupti modi ipsum aliquam cupiditate voluptas nulla
+                eos esse corporis minus provident reiciendis Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Sint, sed labore ipsa mollitia
+                excepturi ea odit officia earum, debitis, laboriosam iusto ab sit quidem
+                nihil at magni alias natus doloribus.</p>
+            <figure>
+                <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Quia inventore accusantium architecto mollitia similique dignissimos
+                    repudiandae, consequuntur distinctio ipsa sint quo, iure nam fuga tempore
+                    vero qui eius et reiciendis Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Nulla quaerat doloribus quas totam nisi, blanditiis velit beatae error modi
+                    molestias animi at, placeat sed itaque ipsum ipsam possimus, culpa aspernatur! Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Fugiat beatae quod veniam exercitationem
+                    in sed illo alias voluptatum quos asperiores perferendis, unde qui. Amet, voluptas porro sequi
+                    nam ipsam earum.</blockquote> <!-- membuat tulisan agak masuk kedalam -->
+                <figcaption>By Lorem Ipsum <a href="http://loremipsum.io/generator" target="_blank">(source)</a>
+                </figcaption>
+            </figure>
+            <hr style color="#00a9ff">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; Copyright 2024 - Example</p>
+    </footer>
+</body>
+
+</html>
