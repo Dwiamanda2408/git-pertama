@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+}
+.container{
+    background-color: rgb(252, 252, 252);
+}
+
+img {
+    max-width: 100%;
+    min-width: 50%;
+    margin-top: 10px;
+    border-radius: 10px 10px 10px 10px;
+
+}
+
+body {
+    background-color: rgb(243, 243, 243);
+    font-size: 10px;
+    font-family: "Roboto Mono", monospace;
+    margin: 0px;
+}
+
+/* navigasi */
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: bisque;
+    height: 70px;
+
+}
+
+.menu .logo {
+    font-size: 3em;
+    color: black;
+    float: right;
+    margin-left: 50px;
+}
+
+.menu ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    font-size: 1.5em;
+    text-align: center;
+
+}
+
+.menu ul a {
+    color: blue;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(97, 203, 238);
+}
+
+nav ul li a:hover {
+    text-decoration-color: underline;
+    /* efek pada link jika disentuh */
+    color: rgb(0, 0, 0);
+    border-bottom: 3px solid black;
+}
+
+.header {
+    border-bottom: 3px solid rgb(201, 155, 100);
+}
+
+.baju {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    width: 20%;
+    min-width: 25px;
+    box-shadow: 0 4px 4px #00a9ff;
+    border-radius: 5px;
+    background-color: rgb(216, 214, 211);
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+}
+
+.baju:hover {
+    box-shadow: 0 0 5px #00a9ff;
+    position: relative;
+    bottom: 4px;
+}
+.baru{height: 500px;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    width: 20%;
+    min-width: 25px;
+    box-shadow: 0 4px 4px #00a9ff;
+    border-radius: 5px;
+    background-color: rgb(216, 214, 211);
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.baru:hover {
+    box-shadow: 0 0 5px #00a9ff;
+    position: relative;
+    bottom: 4px;
+}
+
+.sepatu {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    width: 20%;
+    box-shadow: 0 4px 4px #00a9ff;
+    border-radius: 5px;
+    background-color: rgb(216, 214, 211);
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+.sepatu:hover {
+    box-shadow: 0 0 4px #00a9ff;
+    position: relative;
+    bottom: 4px;
+}
+
+.topi {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    width: 20%;
+    box-shadow: 0 4px 4px #00a9ff;
+    border-radius: 5px;
+    background-color: rgb(216, 214, 211);
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+
+}
+
+.topi:hover {
+    box-shadow: 0 0 4px #00a9ff;
+    position: relative;
+    bottom: 4px;
+}
+
+.topi img {
+    min-width: 50%;
+}
+
+.tas {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    width: 20%;
+    box-shadow: 0 4px 4px #00a9ff;
+    border-radius: 10px;
+    background-color: rgb(216, 214, 211);
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.tas:hover {
+    box-shadow: 0 0 4px #00a9ff;
+    position: relative;
+    bottom: 4px;
+}
+
+.Gambar {
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    /* margin-right: 15px; */
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.catalog {
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(12, 46, 240);
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+#Price {
+    background-color: #cdf5fd;
+}
+
+section {
+    padding: 20px 0 40px;
+    display: block;
+}
+
+.ulprice {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+.h2price {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: rgb(12, 46, 240);
+}
+
+.product {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: rgb(12, 46, 240);
+}
+
+.table,
+th,
+td {
+    border: 1px solid #00a9ff;
+    padding: 10px;
+}
+
+.table,
+th {
+    background-color: #b5e6ff;
+}
+
+.table-product {
+    margin: 0 auto;
+}
+
+.table,
+img {
+    width: 200px;
+}
+
+.tabel {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.form {
+    background-color: #b5e6ff;
+    padding: 60px 0 40px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:450px) {
+
+    .baju,
+    .sepatu,
+    .topi,
+    .tas 
+    .baru{
+        width: 100%;
+        margin-left: 15px;
+    }
+
+    .Gambar {
+        justify-content: center;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .logo {
+        margin-bottom: 40px;
+        margin-left: 10px !important;
+    }
+
+    .ulprice {
+        flex-wrap: wrap;
+    }
+    .catalog h1{
+        font-size: 20px;}
+
+    .cancel{
+        width: 60px;
+        height: 25px;
+        font-size: 10px;
+    }
+    .submit{
+        width: 60px;
+        height: 25px;
+        font-size: 10px;
+    }
+        
+}
+
+@media screen and (max-width:768px) {
+
+    .baju,
+    .sepatu,
+    .topi,
+    .tas 
+    .baru{
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .Gambar {
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .logo {
+        margin-bottom: 40px;
+        margin-left: 10px !important;
+    }
+
+    .ulprice {
+        flex-wrap: wrap;
+    }
+    
+}
+
+/* CONTACT */
+.username,.image,.phone,.textarea{
+    margin: 200px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.contact{
+    text-align: center;
+}
+.cancel{
+    background-color: rgb(209, 209, 209);
+    color: black;
+}
+.cancel:hover{
+    background-color: rgb(121, 121, 121);
+    color: black;
+}
+.submit{
+    background-color: #08a8f3;
+    color: black;
+}
+.send{
+    margin-left: 16%;
+}
+.chek{
+    margin-left: 16%;
+}
+@media screen and (max-width:1024px) {
+
+    .baju,
+    .sepatu,
+    .topi,
+    .tas 
+    .baru{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 15px;
+    }
+
+    .Gambar {
+        justify-content: center;
+    }
+
+    .logo {
+        margin-bottom: 40px;
+        margin-left: 10px !important;
+    }
+
+    .ulprice {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .username,.image,.phone,.textarea{
+        margin: 20px;
+    }
+    .cancel{
+        background-color: rgb(209, 209, 209);
+        color: black;
+    }
+    .cancel:hover{
+        background-color: rgb(121, 121, 121);
+        color: black;
+    }
+    .submit{
+        background-color: #08a8f3;
+    }
+    .send{
+        margin-left: 8%;
+    }
+    .chek{
+        margin-left: 8%;
+    }
+}
