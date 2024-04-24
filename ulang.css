@@ -13,12 +13,63 @@ body {
 }
 
 /* HEADER */
+#hamburger-menu {
+    /* display: none; */
+    width: 300px;
+    padding: 10px;
+    background-color: #8a2be2;
+    color: #f0f8ff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .nav-list {
+    padding: 0;
+  }
+  
+  .nav-list li {
+    list-style: none;
+    padding: 10px 0;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #f0f8ff;
+    padding: 8px 12px;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  .btn-menu {
+    padding: 8px 24px;
+    background-color: #8a2be2;
+    color: #f0f8ff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .btn-close {
+    padding: 8px 24px;
+    background-color: #f0f8ff;
+    color: #8a2be2;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+/* header */
 .menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     background-color: bisque;
     height: 70px;
+    border-bottom: 5px solid rgb(253, 171, 71);
 
 
 }
@@ -57,11 +108,6 @@ nav ul li a:hover {
     /* efek pada link jika disentuh */
     color: rgb(0, 0, 0);
     border-bottom: 3px solid black;
-}
-
-.header {
-    border-bottom: 3px solid rgb(201, 155, 100);
-
 }
 
 /* BODY */
@@ -351,7 +397,7 @@ span {
     }
 
     .menu {
-        width: 650px;
+        width: 730px;
     }
 
     .menu ul li{  
@@ -493,7 +539,6 @@ span {
 
 @media screen and (max-width:768px) {
 
-    }
 
     .logo {
         margin-bottom: 10px;
@@ -506,6 +551,10 @@ span {
     .ceklis {
         margin-left: 8%;
     }
+    .inputan{
+         margin-left: 70px !important;
+    }
+}
 
 /* CONTACT */
 .username,

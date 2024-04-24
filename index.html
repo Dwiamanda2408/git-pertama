@@ -17,7 +17,7 @@
 
 <body>
     <div>
-        <header class="header">
+        <!-- <header class="header">
             <nav class="menu">
                 <div class="logo">
                     <h3>Pertama</h3>
@@ -30,7 +30,30 @@
                     <li><a href="">Product</a></li>
                 </ul>
             </nav>
-        </header>
+        </header> -->
+        <header id="hamburger-menu" hidden>
+            <button class="btn-close">close</button>
+            <h1 id="logo">Logo</h1>
+            <nav id="sidebar-menu">
+              <ul class="nav-list">
+                <li><a class="nav-link" href="#">Home</a></li>
+                <li><a class="nav-link" href="#catalog">Catalog</a></li>
+                <li><a class="nav-link" href="#price">Price</a></li>
+                <li><a class="nav-link" href="#product">Product</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+              </ul>
+            </nav>
+          </header>
+          <script>
+            document.querySelector('.btn-menu').addEventListener('click', () => {
+              document.querySelector('#hamburger-menu').toggleAttribute('hidden');
+            })
+        
+            document.querySelector('.btn-close').addEventListener('click', () => {
+              document.querySelector('#hamburger-menu').setAttribute('hidden', true);
+            })
+          </script>
         <div class="catalog">
             <h1>Catalog</h1>
         </div>
@@ -47,7 +70,7 @@
 
                     </div>
                 </div>
-                <div class="card p-2 baju" style="width: 16rem;">
+                <div class="card p-2 baru" style="width: 16rem;">
                     <img src="baju1.jpg" class="card-img-top " alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Clothes</h5>
@@ -58,7 +81,7 @@
 
                     </div>
                 </div>
-                <div class="card p-2 sepatu" style="width: 16rem;">
+                <div class="card p-2 baru" style="width: 16rem;">
                     <img src="sepatu.jpg" class="card-img-top " alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Shoses</h5>
@@ -69,7 +92,7 @@
 
                     </div>
                 </div>
-                <div class="card p-2 topi" style="width: 16rem;">
+                <div class="card p-2 baru" style="width: 16rem;">
                     <img src="topi.png" class="card-img-top " alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Hat</h5>
