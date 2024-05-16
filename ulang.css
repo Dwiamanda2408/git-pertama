@@ -23,77 +23,73 @@ body {
     top: 0;
     bottom: 0;
     right: 0;
-  }
-  
-  .nav-list {
+}
+
+.nav-list {
     padding: 0;
-  }
-  
-  .nav-list li {
+}
+
+.nav-list li {
     list-style: none;
     padding: 10px 0;
-  }
-  
-  .nav-link {
+}
+
+.nav-link {
     text-decoration: none;
     color: #f0f8ff;
     padding: 8px 12px;
-  }
-  
-  .nav-link:hover {
+}
+
+.nav-link:hover {
     text-decoration: underline;
-  }
-  
-  .btn-menu {
+}
+
+.btn-menu {
     padding: 8px 24px;
     background-color: #8a2be2;
     color: #f0f8ff;
     border: none;
     border-radius: 20px;
     cursor: pointer;
-  }
-  
-  .btn-close {
+}
+
+.btn-close {
     padding: 8px 24px;
     background-color: #f0f8ff;
     color: #8a2be2;
     border: none;
     border-radius: 20px;
     cursor: pointer;
-  }
-  
+}
+
 /* header */
 .menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     background-color: bisque;
-    height: 70px;
+    height: 90px;
     border-bottom: 5px solid rgb(253, 171, 71);
-
-
 }
+
+
 
 .menu .logo {
     font-size: 3em;
     color: black;
     float: right;
     margin-left: 50px;
-    margin-top: 10px;
-
 }
 
 .menu ul {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    font-size: 1.5em;
     text-align: center;
 }
 
 .menu ul a {
     color: blue;
-
 }
 
 nav ul li a {
@@ -232,7 +228,8 @@ nav ul li a:hover {
     font-size: 15px;
     margin-bottom: 10px;
 }
-.text{
+
+.text {
     font-size: 15px;
 }
 
@@ -294,7 +291,8 @@ img {
     border-collapse: collapse;
     width: 80%;
 }
-.tbody{
+
+.tbody {
     font-size: 15px;
 }
 
@@ -302,7 +300,8 @@ img {
     display: flex;
     font-size: 20px;
 }
-.input{
+
+.input {
     width: 10%;
     font-size: 10px;
     height: 30px;
@@ -320,7 +319,7 @@ img {
     font-size: 10px;
     padding: 5px;
     margin-right: 5px;
-    
+
 }
 
 .send {
@@ -384,7 +383,7 @@ img {
 }
 
 .paragraf {
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .footer {
@@ -398,10 +397,14 @@ img {
 span {
     font-size: 23px;
 }
+.Klik{
+    display: none;
+}
 /* ============================================= */
 @media screen and (max-width:1024px) {
     .menu {
         height: 100px;
+        width: 100%;
     }
 
     .menu ul {
@@ -427,28 +430,34 @@ span {
     .tbody {
         font-size: 15px;
     }
-    .input{
+
+    .input {
         width: 500px;
     }
-    .inputan{
+
+    .inputan {
         margin-left: 15%;
     }
-    .Textarea1{
+
+    .Textarea1 {
         width: 500px;
     }
+
     .label {
         font-size: 15px;
-       
+
     }
 
     .labell {
         font-size: 20px;
         margin-left: 20px;
     }
-    .chek{
+
+    .chek {
         margin-bottom: 10px;
     }
-    .ceklis{
+
+    .ceklis {
         margin-left: 12%;
     }
 
@@ -456,13 +465,16 @@ span {
         font-size: 15px;
         text-align: center;
     }
+    .Klik{
+        display: none;
+    }
 }
+
 /* ======================= */
 @media screen and (max-width:768px) {
 
-
     .logo {
-        margin-bottom: 10px;
+        margin-top: 40px;
     }
 
     .ulprice {
@@ -470,12 +482,24 @@ span {
     }
 
     .ceklis {
-        margin-left: 8%;
+        margin-left: 20%;
     }
-    .inputan{
-         margin-left: 70px !important;
+
+    .inputan {
+        margin-left: 70px !important;
+    }
+    .Klik{
+        display: none;
+    }
+    .paragraf{
+        overflow: scroll;
+        text-align: justify;
+    }
+    .footer p{
+        font-size: 15px;
     }
 }
+
 /* ========================= */
 @media screen and (max-width:450px) {
 
@@ -530,13 +554,14 @@ span {
 
 
 }
+
 /* ============================ */
 @media screen and (max-width:320px) {
 
     .logo h3 {
         align-items: center;
         margin-left: 10px !important;
-        margin-top: 20px;
+        margin-bottom: 100px;
         font-size: 25px;
     }
 
@@ -544,45 +569,46 @@ span {
         width: 800px;
     }
 
-    .menu ul li{  
-        margin-top: 50px;  }
+    .menu ul li {
+        margin-bottom: 50px;
+    }
 
     .menu ul li a {
         font-size: 11px;
-        margin-right: 19px;
+        margin-right: 20px;
         font-size: 17px;
-        margin-right: 10px;
     }
 
     .catalog {
-        font-size: 20px;
-        margin-left: 80%;
+        margin-left: 300px;
     }
 
     .Gambar {
         margin-top: 10px;
-        margin-left: 50%;
-        width: 100%;
+        margin-left: 10px;
+        width: 500px;
     }
+
 
     #Price {
         /* margin-left: 52px; */
         width: 800px;
         margin: 20px;
-        margin-left:0
+        margin-left: 0
     }
 
     .ulprice {
         flex-wrap: wrap;
     }
 
-    #Product{
+    #Product {
         margin-left: 35px;
     }
 
-    #Product h2{
+    #Product h2 {
         margin-left: 80%;
     }
+
     .tabel {
         margin: 15px;
         width: 700px;
@@ -602,33 +628,82 @@ span {
         margin-left: 0px;
         width: 250%;
     }
-}
 
-.cancel {
-    width: 60px;
-    height: 25px;
-    font-size: 10px;
-}
 
-.submit {
-    width: 60px;
-    height: 25px;
-    font-size: 10px;
-}
+    .cancel {
+        width: 60px;
+        height: 25px;
+        font-size: 10px;
+    }
 
-.footer {
-    margin-top: 10px;
-    padding: 0;
-}
+    .submit {
+        width: 60px;
+        height: 25px;
+        font-size: 10px;
+    }
 
-.ceklis {
-    margin-left: 10%;
-}
-.send{
-    margin-left: 20px;
-}
-.About{
-  
+    .footer {
+        margin-top: 10px;
+        padding: 0;
+        margin-left: 200px;
+        width: 100%;
+    }
+
+    .ceklis {
+        margin-left: 15%;
+    }
+
+    .send {
+        margin-left: 15px;
+    }
+
+    .About {
+        width: 600px;
+        margin-left: 100px;
+    }
+
+    .nav-list {
+        padding: 0;
+    }
+
+    .nav-list li {
+        list-style: none;
+        padding: 10px 0;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: #f0f8ff;
+        padding: 8px 12px;
+    }
+
+    .nav-link:hover {
+        text-decoration: underline;
+    }
+    #hamburger-menu {
+        /* display: none; */
+        width: 300px;
+        padding: 10px;
+        background-color: #8a2be2;
+        color: #f0f8ff;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 99;
+      }
+    .menu{
+        display: none;
+    }
+    .close{
+        display: block;
+        margin-left: auto;
+    }
+    .Klik{
+        display: block;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
 }
 
 /* ==================================================== */
@@ -660,7 +735,8 @@ span {
     width: 25%;
     height: 30px;
 }
-.cancel{
+
+.cancel {
     width: 25%;
     height: 30px;
 }
