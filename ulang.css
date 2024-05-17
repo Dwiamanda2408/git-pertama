@@ -474,7 +474,7 @@ span {
 @media screen and (max-width:768px) {
 
     .logo {
-        margin-top: 40px;
+        /* margin-top: 40px; */
     }
 
     .ulprice {
@@ -486,7 +486,7 @@ span {
     }
 
     .inputan {
-        margin-left: 70px !important;
+        /* margin-left: 70px !important; */
     }
     .Klik{
         display: none;
@@ -585,15 +585,15 @@ span {
 
     .Gambar {
         margin-top: 10px;
-        margin-left: 10px;
-        width: 500px;
+        /* margin-left: 10px;
+        width: 500px; */
     }
 
 
     #Price {
         /* margin-left: 52px; */
-        width: 800px;
-        margin: 20px;
+        /* width: 800px;
+        margin: 20px; */
         margin-left: 0
     }
 
@@ -602,31 +602,31 @@ span {
     }
 
     #Product {
-        margin-left: 35px;
+        /* margin-left: 35px; */
     }
 
     #Product h2 {
-        margin-left: 80%;
+        /* margin-left: 80%; */
     }
 
     .tabel {
         margin: 15px;
-        width: 700px;
+        /* width: 700px; */
         height: 600px;
     }
 
     .input {
-        width: 150%;
-        margin-left: 0;
+        /* width: 150%; */
+        /* margin-left: 0; */
     }
 
     .inputan {
-        margin-left: 15%;
+        /* margin-left: 15%; */
     }
 
     .form {
         margin-left: 0px;
-        width: 250%;
+        /* width: 250%; */
     }
 
 
@@ -692,7 +692,7 @@ span {
         right: 0;
         z-index: 99;
       }
-    .menu{
+    .menu-lisst{
         display: none;
     }
     .close{
