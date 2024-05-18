@@ -404,7 +404,6 @@ span {
 @media screen and (max-width:1024px) {
     .menu {
         height: 100px;
-        width: 100%;
     }
 
     .menu ul {
@@ -433,10 +432,6 @@ span {
 
     .input {
         width: 500px;
-    }
-
-    .inputan {
-        margin-left: 15%;
     }
 
     .Textarea1 {
@@ -485,9 +480,6 @@ span {
         margin-left: 20%;
     }
 
-    .inputan {
-        /* margin-left: 70px !important; */
-    }
     .Klik{
         display: none;
     }
@@ -615,15 +607,6 @@ span {
         height: 600px;
     }
 
-    .input {
-        /* width: 150%; */
-        /* margin-left: 0; */
-    }
-
-    .inputan {
-        /* margin-left: 15%; */
-    }
-
     .form {
         margin-left: 0px;
         /* width: 250%; */
@@ -654,7 +637,7 @@ span {
     }
 
     .send {
-        margin-left: 15px;
+        /* margin-left: 15px; */
     }
 
     .About {
@@ -700,9 +683,14 @@ span {
         margin-left: auto;
     }
     .Klik{
+        width: 30px;
         display: block;
-        margin-left: 10px;
+        margin-left: 80px;
         margin-top: 10px;
+        margin-bottom: 20%;
+    }
+    .inputan{
+        margin-left: 0;
     }
 }
 
